@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.topo {
+    background-color: var(--green-1);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.topo__marca {
+    font-size: 36px;
+}
+
+.menu {
+    padding: 20px;
+}
+
+.menu__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.lanche-item {
+    background-color: var(--lightGreen-1);
+    padding: 1.2rem;
+    padding-top: 5rem;
+    border-radius: 10px;
+    width: 30%;
+    align-items: center;
+}
+
+.lanche-item:hover {
+    box-shadow: 0 0 10px #666;
+    transform: scale(1.05);
+}
+
+.lanche-item__img {
+    display: flex;
+    justify-content: center;
+}
+
+.lanche-item__img img {
+    border-radius: 12px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.lanche-item__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.lanche-item__name {
+    font-size: 1.4rem;
+    color: var(--black-1);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.lanche-item__description {
+    color: var(--green-1);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.lanche-item__price {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--black-1);
+}
+
+.lanche-item__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.lanche-item__button-add-remove {
+    background-color: var(--green-2);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.lanche-item__quantity {
+    font-size: 18px;
+}
+
+.btn-area__select {
+    background-color: var(--green-1);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-area__select:hover {
+    background-color: var(--black-1);
+}
+
+.menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
