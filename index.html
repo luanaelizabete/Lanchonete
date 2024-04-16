@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/vars.css">
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
@@ -21,9 +22,12 @@
     </header>
 
     <main role="main">
-        <section class="menu">
+        <div class="titulo__cardapio">
+
             <h2 class="menu__title">Cardápio de Lanches</h2>
-    
+        </div>
+        <section class="menu">
+
             <ul class="menu__list">
                 <li class="menu__item">
                     <article class="lanche-item">
@@ -36,26 +40,99 @@
                             <div class="lanche-item__price">R$ 15.99</div>
                         </section>
                         <div class="lanche-item__controls">
-                            <button class="lanche-item__button-add-remove">
-                                <i class="fa-solid fa-circle-minus"></i>
-                            </button>
-                            <span class="lanche-item__quantity" id="valor">1</span>
-                            <button class="lanche-item__button-add-remove">
-                                <i class="fa-solid fa-circle-plus"></i>
-                            </button>
+
+                            <div class="qty mt-5">
+                                <span class="minus bg-dark">-</span>
+                                <input type="number" class="count" name="qty" value="1">
+                                <span class="plus bg-dark">+</span>
+                            </div>
+
                             <div class="lanche-item__btn-area">
                                 <button class="btn-area__select">Selecionar</button>
                             </div>
                         </div>
                     </article>
                 </li>
-    
-               
-    
-               
             </ul>
+
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <article class="lanche-item">
+                        <figure class="lanche-item__img">
+                            <img class="lanche-item__photo" src="./img/pexels-lisa-fotios-1279330.jpg" alt="Imagem de Macarrão">
+                        </figure>
+                        <section class="lanche-item__info">
+                            <h2 class="lanche-item__name">Macarrão</h2>
+                            <p class="lanche-item__description">Um suculento Macarrão com carne macia.</p>
+                            <div class="lanche-item__price">R$ 15.99</div>
+                        </section>
+                        <div class="lanche-item__controls">
+                            <div class="qty mt-5">
+                                <span class="minus bg-dark">-</span>
+                                <input type="number" class="count" name="qty" value="1">
+                                <span class="plus bg-dark">+</span>
+                            </div>
+                            <div class="lanche-item__btn-area">
+                                <button class="btn-area__select">Selecionar</button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <article class="lanche-item">
+                        <figure class="lanche-item__img">
+                            <img class="lanche-item__photo" src="./img/pexels-lisa-fotios-1279330.jpg" alt="Imagem de Macarrão">
+                        </figure>
+                        <section class="lanche-item__info">
+                            <h2 class="lanche-item__name">Macarrão</h2>
+                            <p class="lanche-item__description">Um suculento Macarrão com carne macia.</p>
+                            <div class="lanche-item__price">R$ 15.99</div>
+                        </section>
+                        <div class="lanche-item__controls">
+                            <div class="qty mt-5">
+                                <span class="minus bg-dark">-</span>
+                                <input type="number" class="count" name="qty" value="1">
+                                <span class="plus bg-dark">+</span>
+                            </div>
+                            <div class="lanche-item__btn-area">
+                                <button class="btn-area__select">Selecionar</button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+
+
         </section>
-    </main>    
+        <section class="adicionar-carrinho-button-area">
+            <div class="modal__btn-area">
+
+                <button class="btn__adicionar-carrinho">Adicionar Ao Carrinho</button>
+            </div>
+
+        </section>
+
+        <section class="carrinho-compras">
+            <span class="carrinho-compras__name">Carrinho de Compras</span>
+            <ul class="carrinho-compras__list">
+
+            </ul>
+            <div class="carrinho-compras__total">Total: R$ <span id="total-amount">0.00</span></div>
+
+            <section class="limpar-carrinho-button-area">
+                <div class="modal__btn-area">
+                    <button class="btn__limpar-carrinho">Limpar Carrinho</button>
+                </div>
+            </section>
+        </section>
+
+
+
+
+    </main>
 
 </body>
 
